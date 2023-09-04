@@ -8,6 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        /* Apply styles to add padding around the chart */
+        .chart-container {
+            display: inline-block;
+            align-self: center; /* This centers the table horizontally */
+            padding: 20px; /* Adjust the padding as needed */
+            width: 500px;
+            height: 500px;
+        }
+    </style>
 </head>
 <body>
     <div id="intro">
@@ -31,6 +41,33 @@
         <button id="apply-filters" >Apply Filters</button>
         </div>
     </main>
+    <head>
+        <style>
+            /* Apply styles to center-align the table within its container */
+            table-container.container {
+                text-align: center;
+            }
+    
+            table {
+                display: inline-block;
+                margin: auto; /* This centers the table horizontally */
+                padding: 20px; /* Adjust the padding as needed */
+                width: calc(100% - 4rem);
+                justify-content: center; /* Center horizontally */
+                align-items: center; /* Center vertically */
+            }
+    
+            th, td {
+                border: 1px solid #ddd;
+                padding: 8px;
+                text-align: center;
+            }
+    
+            th {
+                background-color: #f2f2f2;
+            }
+        </style>
+    </head>
         <table>
         <div class="table-container" id="table-container" >
             <!-- Table will be populated here -->
