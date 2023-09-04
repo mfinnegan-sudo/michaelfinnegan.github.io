@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Dashboard</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body>
+    <div id="intro">
+    <header>
+        <h1>Sales Dashboard</h1>
+    </header>
+    </div>
+    <main id="main">
+        <div class="filter-container" style ='display: flex; align-items: center; margin-bottom: 20px;' >
+            <label for="start-date">Start Date:</label>
+            <input type="date" id="start-date" class="filter-input">
+            <label for="end-date">End Date:</label>
+            <input type="date" id="end-date" class="filter-input">
+
+        </div>
+        <div>
+        <label for="product">Product:</label>
+        <select id="product">
+            <option value="">All Products</option>
+        </select>
+        <button id="apply-filters" >Apply Filters</button>
+        </div>
+    </main>
+        <table>
+        <div class="table-container" id="table-container" >
+            <!-- Table will be populated here -->
+        </div>
+        </table>
+        <div class="chart-container" id="bar-chart-container">
+            <!-- Bar chart will be populated here -->
+        </div>
+        <div class="chart-container" id="line-chart">
+            <!-- Line chart will be populated here -->
+        </div>
+
+    
+    <footer>
+        <p>&copy; 2023 Sales Dashboard</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
